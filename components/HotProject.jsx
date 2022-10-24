@@ -10,32 +10,32 @@ const HotProject = () => {
     <div className="bg-[#F5F5F5]">
       <div className="mt-36 ml-12">
         <div className="flex justify-between mr-9 items-center">
-          <p className="font-inter text-5xl font-bold leading-[78px] ">
+          <p className="font-inter text-4xl font-bold leading-[78px] pt-3 ">
             Hot Prooject
           </p>
-          <p className="">lihat semua </p>
+          <p className="hidden sm:flex">lihat semua </p>
         </div>
         <div className="flex mt-7 pb-9 ">
           <Swiper
-            breakpoints={{
-              // when window width is >= 640px
-              640: {
-                width: 640,
-                slidesPerView: 2,
-              },
-              // when window width is >= 768px
-              // 768: {
-              //   width: 768,
-              //   slidesPerView: 2,
-              // },
-            }}
-            slidesPerView={1}
-            spaceBetween={130}
+            // slidesPerView={1}
+            spaceBetween={150}
             className="overflow-visible"
             pagination={{
               clickable: true,
             }}
             modules={[Pagination]}
+            breakpoints={{
+              // when window width is >= 640px
+              640: {
+                width: 640,
+                slidesPerView: 3,
+              },
+              // when window width is >= 768px
+              768: {
+                width: 768,
+                slidesPerView: 2,
+              },
+            }}
           >
             <SwiperSlide>
               <div className="py-16">
