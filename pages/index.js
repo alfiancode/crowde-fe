@@ -1,5 +1,6 @@
 import Banner from "../components/Banner";
 import CaraMengajukanProyek from "../components/CaraMengajukanProyek";
+import CeritaCrowde from "../components/CeritaCrowde";
 import DukungPetani from "../components/DukungPetani";
 import HotProject from "../components/HotProject";
 import KeuntunganUntukPetani from "../components/KeuntunganUntukPetani";
@@ -13,6 +14,7 @@ export default function Home() {
       <DukungPetani/>
       <CaraMengajukanProyek/>
       <KeuntunganUntukPetani/>
+      <CeritaCrowde/>
     </Layout>
   </div>;
 }
