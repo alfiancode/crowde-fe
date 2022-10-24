@@ -3,7 +3,7 @@ import StepKeuntunganUntukPetani from "./StepKeuntunganUntukPetani";
 
 const KeuntunganUntukPetani = () => {
   return (
-    <div className=" mx-4 sm:mx-32 mt-20">
+    <div className=" mx-4 sm:mx-32 my-20">
       <h1 className="font-bold text-3xl ">Keuntungan untuk petani</h1>
       <p className="mb-6 mt-4">
         Nikmati berbagai penawaran menguntungkan yang kami sediakan

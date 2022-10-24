@@ -2,7 +2,7 @@ import React from "react";
 
 const CeritaCrowde = () => {
   return (
-    <div>
+    <div className="hidden sm:flex">
       <div className="  text-center">
         <h1 className="font-bold text-6xl">Cerita Crowde</h1>
 
