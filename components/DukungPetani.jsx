@@ -6,7 +6,7 @@ const DukungPetani = () => {
       <div className="text-center font-bold text-4xl mb-[78px]">
         Dukung petani Bersama <span className="text-orange-600">Crowde</span>
       </div>
-      <div className="flex  justify-center space-x-32 ">
+      <div className="flex flex-col sm:flex-row  justify-center sm:space-x-24 ">
         <div className="flex flex-col items-center">
           <img src="icon1.png" alt="" />
           <p className="font-bold leading-[31px] text-2xl max-w-[260px] text-center">

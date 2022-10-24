@@ -2,12 +2,14 @@ import React from "react";
 
 const CaraMengajukanProyek = () => {
   return (
-    <div className="mx-[258px] mt-[135px]">
-      <div className="flex">
-        <div className="flex mr-24">
+    <div className="sm:mx-[258px] mt-[135px]">
+      <div className="flex flex-col sm:flex-row ">
+        {/* left section */}
+        <div className="flex  sm:hidden md:flex object-cover items-center sm:mr-24 mx-4 sm:mx-0 ">
           <img src="video.png" alt="" />
         </div>
-        <div className="flex-1 mt-8">
+        {/* right section */}
+        <div className="flex-1 mt-8 mx-4">
           <p className="font-bold text-4xl mb-7">
             Cara <span className="text-orange-600">Mengajukan Proyek</span>
           </p>

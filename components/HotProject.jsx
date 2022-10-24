@@ -17,8 +17,20 @@ const HotProject = () => {
         </div>
         <div className="flex mt-7 pb-9 ">
           <Swiper
-            slidesPerView={2}
-            spaceBetween={10}
+            breakpoints={{
+              // when window width is >= 640px
+              640: {
+                width: 640,
+                slidesPerView: 2,
+              },
+              // when window width is >= 768px
+              // 768: {
+              //   width: 768,
+              //   slidesPerView: 2,
+              // },
+            }}
+            slidesPerView={1}
+            spaceBetween={130}
             className="overflow-visible"
             pagination={{
               clickable: true,

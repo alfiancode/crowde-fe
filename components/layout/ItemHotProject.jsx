@@ -4,7 +4,7 @@ const ItemHotProject = () => {
   return (
     <div className="relative   w-[300px] sm:w-[400px] h-[550px] bg-white rounded-[60px] flex flex-col items-center mr-16">
       <div className="flex">
-        <img src="hotproject.png" alt="" className="mt-6" />
+        <img src="hotproject.png" alt="" className="mt-6 w-[250px] sm:w-full" />
       </div>
       <div className="flex w-full">
         <div className=" flex flex-col ml-6 mt-8 space-y-3">
