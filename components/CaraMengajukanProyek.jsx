@@ -2,7 +2,7 @@ import React from "react";
 
 const CaraMengajukanProyek = () => {
   return (
-    <div className="md:mx-[258px] mt-[135px]">
+    <div className="mx-20 lg:mx-[258px] mt-[135px]">
       <div className="flex flex-col sm:flex-row ">
         {/* left section */}
         <div className="flex  sm:hidden md:flex object-cover items-center  mx-4  ">

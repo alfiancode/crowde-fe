@@ -3,16 +3,16 @@ import React from "react";
 const Header = () => {
   return (
     <div>
-      <div className="w-full  mt-6 sm:mt-[53px] pl-12 pr-20">
+      <div className="w-full  mt-6 sm:mt-[53px] sm:pl-12 pr-20 bg-red-300">
         <div className="flex h-[78px] ">
           {/* logo */}
-          <div>
+          <div className="">
             <img src="logo.png" alt="" className="h-[78px] w-[278px] " />
           </div>
           {/* menu */}
           <div className="flex justify-between flex-1 h-full items-center ">
             {/* left menu desktop */}
-            <div className=" space-x-5 font-inter cursor-pointer hidden sm:flex">
+            <div className=" md:space-x-2 sm:space-x-1 font-inter cursor-pointer hidden sm:flex">
               <p>Pemodal Institusi</p>
               <p>Menjadi Partner</p>
               <p>Tentang Kami</p>
