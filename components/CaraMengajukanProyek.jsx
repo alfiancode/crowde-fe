@@ -5,7 +5,7 @@ const CaraMengajukanProyek = () => {
     <div className="sm:mx-[258px] mt-[135px]">
       <div className="flex flex-col sm:flex-row ">
         {/* left section */}
-        <div className="flex  sm:hidden md:flex object-cover items-center sm:mr-24 mx-4 sm:mx-0 ">
+        <div className="flex  sm:hidden md:flex object-cover items-center  mx-4  ">
           <img src="video.png" alt="" />
         </div>
         {/* right section */}
