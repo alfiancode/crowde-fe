@@ -3,9 +3,9 @@ import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { HiCheckCircle, ChevronUpDownIcon } from "react-icons/hi";
 
-const ListBoxProject = ({ data, onSubmit }) => {
+const ListBoxProject = ({ data, getData }) => {
   const [selected, setSelected] = useState("Project Catergory 🔽");
-
+  console.log(data);
   return (
     <div>
       <Listbox
@@ -13,7 +13,7 @@ const ListBoxProject = ({ data, onSubmit }) => {
         className=" "
         onChange={(value) => {
           setSelected(value);
-          onSubmit(value);
+          getData(value);
           // console.log(value);
         }}
       >
@@ -22,7 +22,7 @@ const ListBoxProject = ({ data, onSubmit }) => {
           {selected}
         </Listbox.Button>
         <Listbox.Options className="absolute flex flex-col   w-52 ring ring-gray-50 mt-3  rounded-lg bg-gray-50 shadow-md">
-          {data.map((person, index) => (
+          {data?.map((person, index) => (
             <Listbox.Option
               value={person.name}
               key={index}
