@@ -12,7 +12,7 @@ const links = [
 const Header = () => {
   return (
     <div>
-      <div className="w-full  mt-6 sm:mt-[53px] md:pl-12 pr-2 md:pr-20 ">
+      <div className="w-full  mt-6 sm:mt-[53px] md:pl-12 pr-2 md:pr-20 z-50">
         <div className="flex h-[78px] ">
           {/* logo */}
           <div className="">
