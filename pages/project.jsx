@@ -1,14 +1,14 @@
 import React from "react";
+import InputDaftarProject from "../components/InputDaftarProject";
+
 import Layout from "../components/layout/Layout";
+import TitleDaftarProejct from "../components/TitleDaftarProejct";
 
 const project = () => {
   return (
     <Layout>
-      <div className="text-center mt-24">
-        {" "}
-        <h1 className="font-bold text-[40px]">Daftar Project</h1>
-        <p className="">Temukan Proyek Terbaik yang Cocok untuk Kamu</p>
-      </div>
+      <TitleDaftarProejct />
+      <InputDaftarProject />
     </Layout>
   );
 };
