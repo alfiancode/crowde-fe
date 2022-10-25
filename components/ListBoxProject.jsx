@@ -10,14 +10,14 @@ const ListBoxProject = ({ people, onSubmit }) => {
     <div>
       <Listbox
         as="div"
-        className="relative w-52"
+        className=" w-52"
         onChange={(value) => {
           setSelected(value);
           onSubmit(value);
           // console.log(value);
         }}
       >
-        <Listbox.Button className="py-3 px-6 rounded-lg ring-2 ring-orange-600 w-52">
+        <Listbox.Button className="py-3 px-6 rounded-lg ring-2 ring-orange-600 w-52 ">
           {" "}
           {selected}
         </Listbox.Button>

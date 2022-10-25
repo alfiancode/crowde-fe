@@ -19,7 +19,7 @@ const InputDaftarProject = () => {
 
   const [category, setCategory] = useState("");
   return (
-    <div className="flex mt-20">
+    <div className="flex ">
       <ListBoxProject people={people} onSubmit={getDataCategory} />
       {/* button submit */}
       <button
