@@ -2,31 +2,19 @@ import React from "react";
 import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { HiCheckCircle, ChevronUpDownIcon } from "react-icons/hi";
-import ListBoxProject from "./ListBoxProject";
-const people = [
-  { name: "Wade Cooper" },
-  { name: "Arlene Mccoy" },
-  { name: "Devon Webb" },
-  { name: "Tom Cook" },
-  { name: "Tanya Fox" },
-  { name: "Hellen Schmidt" },
-];
 
-const InputDaftarProject = () => {
-  const getData = (data) => {
-    console.log("data dari lilst box project", data);
-    setCategory(data);
-  };
-  const [category, setCategory] = useState("");
+const ListBoxProject = ({ people, onSubmit }) => {
+  const [selected, setSelected] = useState("Project Catergory");
+
   return (
-    <div className="flex">
-      {/* list box */}
-      {/* <Listbox
+    <div>
+      <Listbox
         as="div"
         className="relative w-52"
         onChange={(value) => {
           setSelected(value);
-          console.log(value);
+          onSubmit(value);
+          // console.log(value);
         }}
       >
         <Listbox.Button className="py-3 px-6 rounded-lg ring-2 ring-orange-600 w-52">
@@ -56,20 +44,9 @@ const InputDaftarProject = () => {
             </Listbox.Option>
           ))}
         </Listbox.Options>
-      </Listbox> */}
-      <ListBoxProject people={people} onSubmit={getData} />
-      {/* button submit */}
-      <button
-        className="bg-orange-600 text-white px-6 py-3 rounded-lg ml-4"
-        onClick={(e) => {
-          e.preventDefault();
-          console.log("ini clg button submit", category);
-        }}
-      >
-        Cari
-      </button>
+      </Listbox>
     </div>
   );
 };
 
-export default InputDaftarProject;
+export default ListBoxProject;
