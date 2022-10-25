@@ -3,7 +3,7 @@ import { GoPrimitiveDot } from "react-icons/go";
 const Banner = () => {
   return (
     <div>
-      <div className="flex flex-col sm:flex-row sm:ml-12 items-center mt-[100px] ">
+      <div className="flex flex-col sm:flex-row sm:ml-12 items-center mt-5 md:mt-[100px] ">
         {/*  left flex*/}
         <div className="flex flex-col max-w-[497px] space-y-8 sm:mr-12 mx-4 sm:mx-0">
           <p className="text-neutral-600 text-[40px] font-bold max-w-[394px]">
