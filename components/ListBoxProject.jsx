@@ -3,26 +3,26 @@ import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { HiCheckCircle, ChevronUpDownIcon } from "react-icons/hi";
 
-const ListBoxProject = ({ people, onSubmit }) => {
-  const [selected, setSelected] = useState("Project Catergory");
+const ListBoxProject = ({ data, onSubmit }) => {
+  const [selected, setSelected] = useState("Project Catergory 🔽");
 
   return (
     <div>
       <Listbox
         as="div"
-        className=" w-52"
+        className=" "
         onChange={(value) => {
           setSelected(value);
           onSubmit(value);
           // console.log(value);
         }}
       >
-        <Listbox.Button className="py-3 px-6 rounded-lg ring-2 ring-orange-600 w-52 ">
+        <Listbox.Button className="w-full border-2 border-gray-300 p-2 rounded-lg mt-1 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent text-left pl-3">
           {" "}
           {selected}
         </Listbox.Button>
         <Listbox.Options className="absolute flex flex-col   w-52 ring ring-gray-50 mt-3  rounded-lg bg-gray-50 shadow-md">
-          {people.map((person, index) => (
+          {data.map((person, index) => (
             <Listbox.Option
               value={person.name}
               key={index}

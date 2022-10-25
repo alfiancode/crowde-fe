@@ -19,9 +19,9 @@ const CaraMengajukanProyek = () => {
             Simak video di samping untuk detail langkah-langkah cara mengajukan
             pinjaman di crowde
           </p>
-          <a className="inline-block  bg-orange-600 px-4 py-[9px] text-lg font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-orange-500 rounded-lg mt-12">
+          <button className="inline-block  bg-orange-600 px-4 py-[9px] text-lg font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-orange-500 rounded-lg mt-12">
             Mulai Investasi
-          </a>
+          </button>
         </div>
       </div>
     </div>
