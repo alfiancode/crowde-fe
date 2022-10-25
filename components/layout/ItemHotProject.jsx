@@ -1,8 +1,10 @@
 import React from "react";
 
-const ItemHotProject = () => {
+const ItemHotProject = ({ addcss }) => {
   return (
-    <div className="relative   w-[300px] sm:w-[400px] h-[550px] bg-white rounded-[60px] flex flex-col items-center mr-16">
+    <div
+      className={`relative  w-[300px] sm:w-[400px] h-[550px] bg-white rounded-[60px] flex flex-col items-center mr-16 ${addcss} `}
+    >
       <div className="flex">
         <img src="hotproject.png" alt="" className="mt-6 w-[250px] sm:w-full" />
       </div>

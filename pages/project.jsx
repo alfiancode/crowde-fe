@@ -1,4 +1,5 @@
 import React from "react";
+import HotProjectSection from "../components/HotProjectSection";
 import InputDaftarProject from "../components/InputDaftarProject";
 
 import Layout from "../components/layout/Layout";
@@ -9,6 +10,7 @@ const project = () => {
     <Layout>
       <TitleDaftarProejct />
       <InputDaftarProject />
+      <HotProjectSection />
     </Layout>
   );
 };
