@@ -1,9 +1,15 @@
 import React from "react";
-
+import { Menu } from "@headlessui/react";
+const links = [
+  { href: "/ourstory", label: "Our story" },
+  { href: "/membership", label: "Membership" },
+  { href: "/write", label: "Write" },
+  { href: "/signin", label: "Sign In" },
+];
 const Header = () => {
   return (
     <div>
-      <div className="w-full  mt-6 sm:mt-[53px] sm:pl-12 pr-5 md:pr-20 ">
+      <div className="w-full  mt-6 sm:mt-[53px] sm:pl-12 pr-2 md:pr-20 ">
         <div className="flex h-[78px] ">
           {/* logo */}
           <div className="">
@@ -23,18 +29,46 @@ const Header = () => {
               <p>Kontak Kami</p>
             </div>
             {/* right menu desktop login and sign up */}
-            <div className="hidden md:flex">
-              <a className="mr-4  bg-orange-600 px-4 py-[7px] text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-orange-500 rounded-lg">
-                Login
-              </a>
-              <a
-                className=" rounded border border-current px-4 py-[7px] text-sm font-medium text-orange-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-orange-500"
-                href="/download"
-              >
-                SignUp
-              </a>
+            <div className="">
+              {" "}
+              <div className="hidden md:flex ">
+                <a className="mr-4  bg-orange-600 px-4 py-[7px] text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-orange-500 rounded-lg">
+                  Login
+                </a>
+                <a
+                  className=" rounded border border-current px-4 py-[7px] text-sm font-medium text-orange-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-orange-500"
+                  href="/download"
+                >
+                  SignUp
+                </a>
+              </div>
+              <Menu as="div" className="flex w-full ">
+                <Menu.Button>
+                  <div className="flex md:hidden ">
+                    <div className="p-2 text-gray-600 transition  rounded hover:text-gray-600/75">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-5 h-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M4 6h16M4 12h16M4 18h16"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </Menu.Button>
+              </Menu>
             </div>
-            <div className="flex md:hidden w-full justify-end  ">
+
+            {/* humberger button */}
+
+            {/* <div className="flex md:hidden w-full justify-end  ">
               <div className="p-2 text-gray-600 transition  rounded hover:text-gray-600/75 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +85,7 @@ const Header = () => {
                   />
                 </svg>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
