@@ -7,7 +7,7 @@ const ItemHotProject = ({ addcss, item }) => {
     >
       <div className="flex">
         <img
-          src={item.thumbnail}
+          src={item?.thumbnail}
           alt=""
           className="mt-8 w-full h-[200px]  rounded-lg shadow-xl"
         />
@@ -16,7 +16,7 @@ const ItemHotProject = ({ addcss, item }) => {
         <div className=" flex flex-col ml-6 mt-8 space-y-3">
           <div className="flex">
             <p className="bg-gray-200 rounded-xl py-1 px-4 font-bold leading-6">
-              {item.category}
+              {item?.category}
             </p>
           </div>
 
