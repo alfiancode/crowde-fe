@@ -1,8 +1,6 @@
 import React from "react";
 
 const ItemHotProject = ({ addcss, item }) => {
-  console.log("item", item);
-
   return (
     <div
       className={`relative  w-[300px] sm:w-[400px] h-[550px] bg-white rounded-[60px] flex flex-col items-center mr-16 ${addcss} `}
