@@ -5,7 +5,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
-const HotProject = () => {
+const HotProject = (data) => {
+  const items = data?.data?.data?.products;
+  console.log(items);
   return (
     <div className="bg-[#F5F5F5]">
       <div className="mt-36 ml-12">
@@ -37,11 +39,15 @@ const HotProject = () => {
               },
             }}
           >
-            <SwiperSlide>
-              <div className="py-16">
-                <ItemHotProject />
-              </div>
-            </SwiperSlide>
+            {items?.map((item, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <div className="py-16">
+                    <ItemHotProject item={item} />
+                  </div>
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </div>
