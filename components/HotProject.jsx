@@ -42,36 +42,6 @@ const HotProject = () => {
                 <ItemHotProject />
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="py-16">
-                <ItemHotProject />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="py-16">
-                <ItemHotProject />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="py-16">
-                <ItemHotProject />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="py-16">
-                <ItemHotProject />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="py-16">
-                <ItemHotProject />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="py-16">
-                <ItemHotProject />
-              </div>
-            </SwiperSlide>
           </Swiper>
         </div>
       </div>
