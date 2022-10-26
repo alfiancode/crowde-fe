@@ -1,23 +1,29 @@
 import React from "react";
 
-const ItemHotProject = ({ addcss }) => {
+const ItemHotProject = ({ addcss, item }) => {
+  console.log("item", item);
+
   return (
     <div
       className={`relative  w-[300px] sm:w-[400px] h-[550px] bg-white rounded-[60px] flex flex-col items-center mr-16 ${addcss} `}
     >
       <div className="flex">
-        <img src="hotproject.png" alt="" className="mt-6 w-[250px] sm:w-full" />
+        <img
+          src={item.thumbnail}
+          alt=""
+          className="mt-8 w-full h-[200px]  rounded-lg shadow-xl"
+        />
       </div>
       <div className="flex w-full">
         <div className=" flex flex-col ml-6 mt-8 space-y-3">
           <div className="flex">
             <p className="bg-gray-200 rounded-xl py-1 px-4 font-bold leading-6">
-              Sayuran
+              {item.category}
             </p>
           </div>
 
-          <p className="font-bold leading-6 ">CV. Maju Bersama</p>
-          <p className="font-bold leading-6">Total Pendanaan Rp150.000.000</p>
+          <p className="font-bold leading-6 ">{item.title}</p>
+          <p className="font-bold leading-6">{item.description}</p>
         </div>
       </div>
       <a className="inline-block mt-16  bg-orange-600 px-4 py-[7px] text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-orange-500 rounded-lg">

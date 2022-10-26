@@ -5,7 +5,7 @@ import { HiCheckCircle, ChevronUpDownIcon } from "react-icons/hi";
 
 const ListBoxProject = ({ data, getData }) => {
   const [selected, setSelected] = useState("Project Catergory 🔽");
-  console.log(data);
+
   return (
     <div>
       <Listbox
@@ -14,7 +14,6 @@ const ListBoxProject = ({ data, getData }) => {
         onChange={(value) => {
           setSelected(value);
           getData(value);
-          // console.log(value);
         }}
       >
         <Listbox.Button className="w-full border-2 border-gray-300 p-2 rounded-lg mt-1 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent text-left pl-3">
