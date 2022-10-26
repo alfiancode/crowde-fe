@@ -3,7 +3,7 @@ import React from "react";
 const ItemHotProject = ({ addcss, item }) => {
   return (
     <div
-      className={`relative  w-[300px] sm:w-[400px] h-[550px] bg-white rounded-[60px] flex flex-col items-center mr-16 ${addcss} `}
+      className={`relative shadow-xl  w-[300px] sm:w-[400px] h-[550px] bg-white rounded-3xl flex flex-col items-center  ${addcss} `}
     >
       <div className="flex">
         <img
@@ -27,7 +27,7 @@ const ItemHotProject = ({ addcss, item }) => {
       <a className="inline-block mt-16  bg-orange-600 px-4 py-[7px] text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-orange-500 rounded-lg">
         Mulai Investasi
       </a>
-      <div className="absolute w-[116px] h-[116px] bg-teal-500 -right-[58px] -top-[58px] rounded-full flex items-center justify-center  font-bold !z-50 ">
+      <div className=" hidden md:flex absolute w-[116px] h-[116px] bg-teal-500 -right-[58px] -top-[58px] rounded-full  items-center justify-center  font-bold  ">
         Coming Soon
       </div>
     </div>

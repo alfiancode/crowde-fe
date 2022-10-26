@@ -8,7 +8,7 @@ const HotProjectSection = (data) => {
     return <div>tes</div>;
   }
   return (
-    <div className=" flex w-full flex-wrap  justify-center  px-1  bg-slate-200 mt-20">
+    <div className=" flex w-full flex-wrap  justify-center  px-1  bg-slate-200 mt-20 md:space-x-24">
       {/* map dataHotProject */}
       {dataHotProject?.map((item, index) => {
         return <ItemHotProject addcss={"my-16"} item={item} key={index} />;
