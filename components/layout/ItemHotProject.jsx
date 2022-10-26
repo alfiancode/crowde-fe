@@ -20,8 +20,8 @@ const ItemHotProject = ({ addcss, item }) => {
             </p>
           </div>
 
-          <p className="font-bold leading-6 ">{item.title}</p>
-          <p className="font-bold leading-6">{item.description}</p>
+          <p className="font-bold leading-6 ">{item?.title}</p>
+          <p className="font-bold leading-6">{item?.description}</p>
         </div>
       </div>
       <a className="inline-block mt-16  bg-orange-600 px-4 py-[7px] text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-orange-500 rounded-lg">
